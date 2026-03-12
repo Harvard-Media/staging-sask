@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staging Sask — Component Demo</title>
+  <!-- Load the MAIN bundle (all components) -->
+  <link rel="stylesheet" href="dist/components.css">
+</head>
+<body style="margin:0; font-family: sans-serif; background:#f9f9f9;">
+
+  <!-- Banner -->
+  <div class="cms-banner">
+    <span class="cms-banner__text">🚀 New update available! <a href="#">Learn more</a></span>
+    <button class="cms-banner__close">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="cms-nav">
+    <a href="#" class="cms-nav__logo">SaskMedia</a>
+    <button class="cms-nav__hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="cms-nav__links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main style="max-width:800px; margin:2rem auto; padding:0 1.5rem;">
+
+    <h1>Component Demo</h1>
+    <p>This page uses <code>dist/components.css</code> + <code>dist/components.js</code> — the main bundle (all components).</p>
+
+    <!-- Popup trigger -->
+    <button data-popup-target="demo-popup"
+      style="padding:0.75rem 1.5rem; background:#1a1a2e; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:1rem; margin-bottom:2rem;">
+      Open Popup
+    </button>
+
+    <!-- Slider -->
+    <h2>Slider</h2>
+    <div class="cms-slider" style="background:#ddd; border-radius:8px; margin-bottom:2rem;">
+      <div class="cms-slider__track">
+        <div class="cms-slider__slide" style="padding:4rem 2rem; text-align:center; background:#1a1a2e; color:#fff; font-size:1.5rem;">Slide 1</div>
+        <div class="cms-slider__slide" style="padding:4rem 2rem; text-align:center; background:#e63946; color:#fff; font-size:1.5rem;">Slide 2</div>
+        <div class="cms-slider__slide" style="padding:4rem 2rem; text-align:center; background:#2a9d8f; color:#fff; font-size:1.5rem;">Slide 3</div>
+      </div>
+      <button class="cms-slider__btn cms-slider__btn--prev">&#8592;</button>
+      <button class="cms-slider__btn cms-slider__btn--next">&#8594;</button>
+      <div class="cms-slider__dots">
+        <button class="cms-slider__dot active"></button>
+        <button class="cms-slider__dot"></button>
+        <button class="cms-slider__dot"></button>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <h2>Accordion</h2>
+    <div class="cms-accordion" style="margin-bottom:2rem;">
+      <div class="cms-accordion__item">
+        <button class="cms-accordion__trigger">What is this component library?</button>
+        <div class="cms-accordion__body">A lightweight, CMS-injectable set of UI components managed via GitHub and served over jsDelivr CDN.</div>
+      </div>
+      <div class="cms-accordion__item">
+        <button class="cms-accordion__trigger">How do I add a new component?</button>
+        <div class="cms-accordion__body">Create a folder under <code>/components/my-component/</code> with matching CSS and JS files, add it to <code>builds.json</code>, and push to main.</div>
+      </div>
+      <div class="cms-accordion__item">
+        <button class="cms-accordion__trigger">How do bundles work?</button>
+        <div class="cms-accordion__body">Each bundle in <code>builds.json</code> defines which components to include and which dist folder to output to. GitHub Actions rebuilds all bundles on every push.</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Popup -->
+  <div class="cms-popup-overlay" id="demo-popup">
+    <div class="cms-popup">
+      <button class="cms-popup-close">✕</button>
+      <h2>Hello from Popup! 👋</h2>
+      <p>Dismiss by clicking ✕ or clicking outside this box.</p>
+    </div>
+  </div>
+
+  <script src="dist/components.js"></script>
+</body>
+</html>

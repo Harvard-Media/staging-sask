@@ -1,0 +1,8 @@
+{
+  "name": "staging-sask",
+  "version": "1.0.0",
+  "description": "CMS component bundles for staging-sask — controlled via builds.json",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
