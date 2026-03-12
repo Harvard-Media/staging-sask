@@ -4,19 +4,16 @@
     }
 }
 /* Nav placeholder: same background and height as custom nav until it loads */
-
 @media (min-width: 991px) {
     header {
     min-height: 111px; /* desktop */
     }
 }
-
 @media (min-width: 992px) {
     .mainnav .topnav > li > .navitem {
         padding: 0 7px;
     }
 }
-
 small.card-badge,
 .card-badge {
     background: rgb(0, 69, 17);
@@ -25,11 +22,9 @@ small.card-badge,
     background: radial-gradient(circle, rgba(0, 69, 17, 1) 0%, rgba(0, 36, 9, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004511",endColorstr="#002409",GradientType=1);
 }
-
 .theme-bg {
     background-color: #016a1b;
 }
-
 /*   Mobile Header change style   */
 @media (max-width: 991px) {
     .navbt-container .navbt {
