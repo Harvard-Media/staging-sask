@@ -20,20 +20,5 @@
       "distFolder": "dist-stage-sasktoday",
       "components": ["radio_widget", "general", "new_ui"]
     }
-    {
-      "name": "stage-sasktoday-bundle",
-      "distFolder": "dist-sasktoday",
-      "components": ["radio_widget", "general", "new_ui"]
-    }
-    {
-      "name": "stage-sasktoday-bundle",
-      "distFolder": "dist-moosjawto",
-      "components": ["radio_widget", "general", "new_ui"]
-    }
-    {
-      "name": "stage-sasktoday-bundle",
-      "distFolder": "dist-stage-sasktoday",
-      "components": ["radio_widget", "general", "new_ui", s]
-    }
   ]
 }
